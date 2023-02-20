@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
 source "$PLUGIN_CORE_AVAILABLE_PATH/common/functions"
+dokku_log_info1 "Connecting network"
 APP="$1"; 
 INTERNAL_PORT="$2";
 INTERNAL_IP_ADDRESS="$3"; 
